@@ -24,15 +24,20 @@ int main() {
     //basic interface for inputs
     cout <<"Enter your name: ";
     cin >> name;
+    
     cout <<"Hello " << name << "! This calculator will help you figure out insulin dosages."
     " Enter your target blood sugar: ";
     cin >> targetBG;
+    
     cout <<"Enter your high blood glucose correction factor: ";
     cin >> corrFactor;
+    
     cout <<"How many carbs require one unit of insulin? (Insulin to carb ratio): ";
     cin >> icRatio;
+    
     cout <<"What is your current Blood Glucose level: ";
     cin >> bloodGlucose;
+    
     cout <<"How many carbs are you eating? Enter 0 if you are not eating: ";
     cin >> carbs;
     
