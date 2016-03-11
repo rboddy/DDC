@@ -8,8 +8,11 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main() {
+    
+    //going to try and push this project straight to github from xcode
+    cout <<"Initial commit to prepare for GitHub push";
+    
 }
