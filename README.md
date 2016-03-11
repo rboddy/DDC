@@ -4,3 +4,5 @@ about earlier.
 
 I began as a Java programmer and spent a lot of time with that language so the transition to C++ has been relatively simple 
 and I'm really enjoying it.
+
+I was originally pushing commits directly through xcode, but then noticed that that doesn't update my github users commits so I'll just push directly through the site.
