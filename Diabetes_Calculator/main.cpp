@@ -21,6 +21,8 @@ int main() {
     string response;
     string name;
     
+    //function prototype for dosage function
+    double Dosage (double bloodGlucose, double carbs, double icRatio, double corrFactor, double targetBG);
     
     //basic interface for inputs
     cout <<"Enter your name: ";
@@ -51,4 +53,12 @@ int main() {
     else {
         carbs = 0;
     }
+}
+
+//function find basic dosage
+double Dosage (double bloodGlucose, double carbs, double icRatio, double corrFactor, double targetBg) {
+    double correctionUnits = (bloodGlucose-targetBg)/corrFactor;
+    double foodUnits = carbs/icRatio;
+    double totalDose = correctionUnits + foodUnits;
+    return totalDose;
 }
