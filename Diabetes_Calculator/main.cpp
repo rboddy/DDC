@@ -18,6 +18,7 @@ int main() {
     double targetBG;
     double icRatio;
     double corrFactor;
+    string response;
     string name;
     
     
@@ -38,9 +39,16 @@ int main() {
     cout <<"What is your current Blood Glucose level: ";
     cin >> bloodGlucose;
     
-    cout <<"How many carbs are you eating? Enter 0 if you are not eating: ";
-    cin >> carbs;
+    //if statement created to check if user is eating or correcting a high blood glucose
     
-    /*I will be adding if statement to check if user is eating and create a function to call that will calculate dosage, this is just variable bs to get started conceptualizing */
+    cout <<"Are you eating? Type 'yes' or 'no': ";
+    cin >> response;
     
+    if (response == "yes" || response == "Yes") {
+        cout <<"Carb Amount: ";
+        cin >> carbs;
+    }
+    else {
+        carbs = 0;
+    }
 }
