@@ -53,6 +53,7 @@ int main() {
     else {
         carbs = 0;
     }
+    cout <<"Your suggested dosage is " << Dosage(bloodGlucose, carbs, icRatio, corrFactor, targetBG) << " units of insulin! \n";
 }
 
 //function find basic dosage
